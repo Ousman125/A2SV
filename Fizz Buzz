@@ -1,0 +1,21 @@
+class Solution {
+    public List<String> fizzBuzz(int n) {
+      List<String> result = new ArrayList<String>();
+      for(int i=1;i<=n;i++){
+          result.add(getList(i));
+      }
+      return result;
+      }
+      public String getList(int x){
+        if(x%3==0 & x%5==0){
+            return "FizzBuzz";
+        } if (x%3==0 ){
+            return "Fizz";
+            }
+               if ( x%5==0){
+            return "Buzz";
+            }
+           return String.valueOf(x);
+      
+    }
+}
