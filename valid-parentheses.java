@@ -1,5 +1,4 @@
 class Solution {
-    boolean j;
     public boolean isValid(String s) {
         Stack<Integer> p = new Stack<>();
         for(int i = 0; i < s.length(); i++) {
